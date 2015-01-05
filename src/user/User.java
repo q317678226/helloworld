@@ -11,4 +11,9 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public User(String name) {
+		this.name = name;
+	}
+	public User () {};
 }
