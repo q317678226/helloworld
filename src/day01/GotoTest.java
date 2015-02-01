@@ -8,7 +8,7 @@ public class GotoTest {
 	}
 	
 	public static void saveDefault() {
-		System.out.println("ִ��ô");
+		System.out.println("没执行");
 	}
 	
 	static void save(int fee) {
