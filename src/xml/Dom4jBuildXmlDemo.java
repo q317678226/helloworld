@@ -125,7 +125,7 @@ public class Dom4jBuildXmlDemo {
                 writer.close();  
                 // 输出全部原始数据，并用它生成新的我们需要的XML文件  
                 XMLWriter writer2 = new XMLWriter(new FileWriter(new File(  
-                "D:/ec/ecincoming1/WSDFRE_GPRS800_BBOSS_"+sdf.format(new Date())+".NNN.txt")), format);  
+                "D:/ec/ecincoming1/WSDFRE_GPRS800_BBOSS_"+sdf.format(new Date())+".002.txt")), format);  
                 writer2.write(document); //输出到文件  
                 writer2.close();  
        } catch (UnsupportedEncodingException e) {  

@@ -1,7 +1,9 @@
 package format;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Pattern;
 
 public class FormatMatcheUtil {
@@ -35,10 +37,24 @@ public class FormatMatcheUtil {
 		String filename = "WSDFRE_GPRS800_BBOSS_20150121171505.000.txt";
 		System.out.println(memberChangePattern.matcher(filename).matches());
 	}
+	
+	public static void dateForm () {
+		DateFormat formatter3 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		System.out.println(new Date());
+		String dateString = formatter3.format(new Date());
+		try {
+			System.out.println(formatter3.parse(dateString));
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 
 	public static void main(String[] args) {
 //		System.out.println(isNumberic("000"));
 //		System.out.println(isValidDate("20150122095522"));
-		regex();
+//		regex();
+		dateForm();
 	}
 }
